@@ -230,3 +230,8 @@
   bottom: 40px;
   right: 80px;
 }
+.center{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
