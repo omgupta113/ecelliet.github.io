@@ -1,0 +1,232 @@
+/* GLOBAL STYLES */
+
+  
+  /* DEMO-SPECIFIC STYLES */
+  .typewrite {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  .start{
+    padding: 2em 1em !important;
+  }
+  .space{
+    background-image: url("space.jpg");
+    background-size: 100%;
+  }
+  .cont{
+    padding: 5em 1em;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+  }
+  svg{
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin: 0;
+    width: 100%;
+  }
+  #manhead1 , #manhead2{
+    animation: manhead 1s ease-in-out infinite alternate;
+    transform-origin:bottom;
+    transform-box: fill-box;
+  }
+  @keyframes manhead {
+    from{
+      transform: rotateZ(0deg);
+    }
+    to{
+      transform: rotateZ(-20deg);
+    }
+    
+  }
+  #leave1 , #leave2{
+    animation: leave 2s ease-in-out infinite alternate;
+    transform-origin:bottom;
+    transform-box: fill-box;
+  }
+  @keyframes leave {
+    from{
+      transform: rotateZ(-10deg);
+    }
+    to{
+      transform: rotateZ(10deg);
+    }
+  }
+  #hand1 {
+    animation: hand 2s ease-in-out infinite alternate;
+    transform-origin:right;
+    transform-box: fill-box;
+  }
+  @keyframes hand {
+    from{
+      transform: rotateZ(-5deg);
+    }
+    to{
+      transform: rotateZ(5deg);
+    }
+  }
+  #hand1_2 {
+    animation: hand 2s ease-in-out infinite alternate;
+    transform-origin:left;
+    transform-box: fill-box;
+  }
+  h1{
+    text-align: center;
+  }
+  #home{
+    background-color: black;
+  }
+  .alt{
+    background-image: url("bg.png");
+    background-size: 100%;
+  }
+  .head{
+    position: relative;
+    margin-top: 2vw;
+    text-align: center;
+    z-index: 3;
+    font-size: 45px;
+    font-weight: 600;
+    background: linear-gradient(90deg,#a929ff 10%,#ff22b5 40%,#1548ff 90%,#a929ff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-style: normal;
+    text-transform: capitalize;
+    animation: heading 7s ease-in infinite;
+  }
+  @keyframes heading {
+    0%{
+      background-position: 200%;
+    }
+    
+  }
+  .typed-cursor {
+    color: black;
+  }
+  .rocket {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.overlay{
+  position: absolute;
+  background-origin: 0;
+  
+  background-color: #ffc13cce;
+  overflow: hidden;
+  width: 88%;
+  height: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+}
+@media (min-width:576px) and (max-width:1200px){
+  .overlay{
+  width: 92%;
+  }
+  .card:hover .overlay{
+    height: 92% !important;
+  }
+}
+@media (max-width:576px){
+  .overlay{
+  width: 96%;
+  }
+  .card:hover .overlay{
+    height: 96% !important;
+  }
+}
+.carousel{
+  
+  font-family: kalam;
+}
+
+.card{
+  position: relative;
+  padding: 2%;
+  font-family: kalam;
+  background-image: url("space.jpg");
+  background-size: 100%;
+  background-color: black !important;
+}
+.card-img{
+  display: block;
+}
+.card:hover .overlay{
+  height: 88%;
+}
+.card-title{
+  margin-top: 10%;
+  text-align: center;
+  color: #31087B;
+}
+.card-text{
+  margin: 10%;
+  text-align: center;
+  color: #ff22b5;
+}
+.carousel{
+  margin-top:5% ;
+}
+.photo-title{
+  color: rgb(255, 223, 45) !important;
+}
+.int{
+  
+  
+  padding: 10px 20px;
+  margin: 14px;
+  border-radius: 8px;
+  outline: none;
+  background: #050505;
+  border: none;
+  color: whitesmoke;
+  font-family: poppins;
+  font-size: 18px;
+}
+.contact{
+  background-image: url("contact-back.png");
+}
+.stick{
+  position: fixed;
+  bottom: 40px;
+  right: 80px;
+}
