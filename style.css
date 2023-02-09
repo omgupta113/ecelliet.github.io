@@ -2,6 +2,12 @@
 
   
   /* DEMO-SPECIFIC STYLES */
+  body{
+    cursor:  url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOE0LUHMBnfZq4r7JsYwuaTr3f-iwM_Nqvb6LJ7FOCAeZOc_aPDVMdFJaNHaMftukJPSbAVMxWRS2_baYA8pAe2DWypnRrQInTLdg6w1XUM9o5dH1u-NM9wo-eB_H1XFjwb5uCUHYNja8014GuJtP6pdfGeCIye4srX2TF1prtmOZBrty89by__38lsg/s24/cursor-medium.png),auto;
+  }
+  a ,button{
+    cursor: url("pointer.png"),auto !important;
+  }
   .typewrite {
     color: #fff;
     font-family: monospace;
